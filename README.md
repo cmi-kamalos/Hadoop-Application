@@ -10,7 +10,7 @@ Because the course is a little bit outdated or just the different setups are no 
 ## Setup
 Before starting the learning journey , you must setup your hadoop environment. We'll be using cloudera in a virtual env. It's better to download virtual box(vbox) version from cloudera website. Although it's possible to use vmware as used in the course. Stick with me with a vbox. It has advantage when customizing its parameters. That's the advantages over vmware (free version).
 
-1- Download cloudera on the following link: https://downloads.cloudera.com/demo_vm/virtualbox/cloudera-quickstart-vm-5.13.0-0-virtualbox.zip. honestly it's going to an end  of support. We'll be sticking as close as possible with the course. Otherwise, if you fill comfortable use **CDH**.
+1- Download cloudera on the following link: https://downloads.cloudera.com/demo_vm/virtualbox/cloudera-quickstart-vm-5.13.0-0-virtualbox.zip. honestly it's going to an end  of support. We'll be sticking as close as possible with the course. Otherwise, if you fill comfortable use **CDP**.
 
 2- You'll have to update your cloudera VM as the centos running cloudera reached the end of life. There is a tuto explanation of the process (https://data-mining.philippe-fournier-viger.com/how-to-update-the-cloudera-vm-solved/?unapproved=35099&moderation-hash=56ec7d1b8ba9a33cf5ea241c0182e99d#comment-35099 ). Skip this step if you don't use **cloudera cdh quickstart**
 

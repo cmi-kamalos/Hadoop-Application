@@ -25,28 +25,28 @@ Before starting the learning journey , you must setup your hadoop environment. W
  
  II) Create a reducer that will iterate over elements which happened to have the same key. It counts those elements and reduce them: "wordcount_reducer.py"
  
- IV) Make Files which contain the words to count. In terminal: 
+ III) Make Files which contain the words to count. In terminal: 
  
     echo "A long time ago in a galaxy far far away" > testfile1
  
- V) Elevate permission for the mapper and reducer to be executable: 
+ IV) Elevate permission for the mapper and reducer to be executable: 
  
     chmod +x wordcount_mapper.py
     chmod +x wordcount_reducer.py
  
- VI) Create a directory for the user input and put Files containing those words into  Hadoop : 
+ V) Create a directory for the user input and put Files containing those words into  Hadoop : 
  
     hdfs dfs -mkdir /user/cloudera/input
   
     hdfs dfs -put ~/testfile* /user/cloudera/input
- VII) Test the program in local (always in terminal) : 
+ VI) Test the program in local (always in terminal) : 
  
     cat testfile* | python wordcount_mapper.py | sort | python wordcount_reducer.py
  
- VIII) Final execution by the following syntax:
+ VII) Final execution by the following syntax:
  
     hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar -input /user/cloudera/input/testfile1 -input /user/cloudera/input/testfile2 -output /user/cloudera/output_new   file ~/wordcount_mapper.py -mapper wordcount_mapper.py file ~/wordcount_reducer.py -reducer wordcount_reducer.py
     
- X) Export result into your local from hadoop environment
+ VIII) Export result into your local from hadoop environment
  
     hdfs dfs -getmerge /user/cloudera/output_new/*  wordcount_num1_output.txt

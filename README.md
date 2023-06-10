@@ -16,7 +16,7 @@ Before starting the learning journey , you must setup your hadoop environment. W
 
 3- After that migrate your python from python 2.6 to at least 2.7 to be effectively use pip or easy_install.
 
-4- Install vbox guest additions. On general > advanced enable shared clipboard to **bidirectional**. Increase your vbox ram and cpu to double of the initial config if allowed.
+4- Install vbox guest additions. while on parameter go **general > advanced** enable shared clipboard to **bidirectional**. Increase your vbox ram and cpu to double of the initial config if allowed.
 
 ## Execution of simple mapreduce operation
  In this simple example, we'll walk-through a counting problem using mapreduce. The idea is to emphasize on the key-value as core of this paradigm. The code will be on the folder **wordcount_mapreduce**. The steps of the resolution will be on the following:
@@ -25,16 +25,16 @@ Before starting the learning journey , you must setup your hadoop environment. W
  
  II) Create a reducer that will iterate over elements which happened to have the same key. It counts those element and reduce them: "wordcount_reducer.py"
  
- IV) Files which contain the words to count. In terminal: 
+ IV) Make Files which contain the words to count. In terminal: 
  
     echo "here the words to count" > testfile1
  
- V) Make the mappers and reducers executables: 
+ V) Elevate permission for the mapper and reducer to be executable: 
  
     chmod +x wordcount_mapper.py
     chmod +x wordcount_reducer.py
  
- VI) create a directory for the user input and put Files containing those words into  Hadoop : 
+ VI) Create a directory for the user input and put Files containing those words into  Hadoop : 
  
     hdfs dfs -mkdir /user/cloudera/input
   
@@ -46,4 +46,7 @@ Before starting the learning journey , you must setup your hadoop environment. W
  VIII) Final execution by the following syntax:
  
     hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar -input /user/cloudera/input/testfile1 -input /user/cloudera/input/testfile2 -output /user/cloudera/output_new   file ~/wordcount_mapper.py -mapper wordcount_mapper.py file ~/wordcount_reducer.py -reducer wordcount_reducer.py
-  
+    
+ X) Export result into your local from hadoop environment
+ 
+    hdfs dfs -getmerge /user/cloudera/output_new/*  wordcount_num1_output.txt

@@ -27,7 +27,7 @@ Before starting the learning journey , you must setup your hadoop environment. W
  
  IV) Make Files which contain the words to count. In terminal: 
  
-    echo "here the words to count" > testfile1
+    echo "A long time ago in a galaxy far far away" > testfile1
  
  V) Elevate permission for the mapper and reducer to be executable: 
  

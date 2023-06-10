@@ -23,7 +23,7 @@ Before starting the learning journey , you must setup your hadoop environment. W
  
  I) Create the mapper that will run on the dataNode. A little precision as we're progressing ( we don't have a cluster of nodes, it means 1 dataNode). The mapper map all key-values elements from our input files: "wordcount_mapper.py"
  
- II) Create a reducer that will iterate over elements which happened to have the same key. It counts those element and reduce them: "wordcount_reducer.py"
+ II) Create a reducer that will iterate over elements which happened to have the same key. It counts those elements and reduce them: "wordcount_reducer.py"
  
  IV) Make Files which contain the words to count. In terminal: 
  

@@ -1,6 +1,6 @@
 # Hadoop-Application
 
-This repo is built through following the course of Hadoop Platform and Application Framework on coursera proposed by University of California San Diego. They covered the essentials of Big Data platform and provided hands-on application on realtime project. Despite I have been Certified IBM Big Data. I noticed a small difference in those training programs. IBM embedded the learning process on their platform through virtual lab. It's practical but it abstracts a lot of exposure that it could beneficial to the trainee.
+This repo is built through following the course of Hadoop Platform and Application Framework on coursera proposed by University of California San Diego. They covered the essentials of Big Data platform and provided hands-on application on realtime project. Despite I have been Certified IBM Big Data. I noticed a small difference in those training programs. IBM embedded the learning process on their platform through virtual lab. It's practical but it abstracts a lot of exposure that it could be beneficial to the trainee.
 ## Motivation
 The principal drive and urge is to facilitate certain tasks that can be easy unbearable for new comer who happened to be beginner into hadoop and linux environment. Though he could be following the theorical part of the course but he'll have hard time applying these skills when it comes to practice.
 Because the course is a little bit outdated or just the different setups are no longer working as expected.

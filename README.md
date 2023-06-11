@@ -14,7 +14,7 @@ Before starting the learning journey , you must setup your hadoop environment. W
 
 2- You'll have to update your cloudera VM as the centos running cloudera reached the end of life. There is a tuto explanation of the process (https://data-mining.philippe-fournier-viger.com/how-to-update-the-cloudera-vm-solved/?unapproved=35099&moderation-hash=56ec7d1b8ba9a33cf5ea241c0182e99d#comment-35099 ). Skip this step if you don't use **cloudera cdh quickstart**
 
-3- After that migrate your python from python 2.6 to at least 2.7 to be effectively use pip or easy_install.
+3- After that migrate your python from python 2.6 to at least 2.7 to be effectively able to use pip or easy_install.
 
 4- Install vbox guest additions. while on parameter go **general > advanced** enable shared clipboard to **bidirectional**. Increase your vbox ram and cpu to double of the initial config if allowed.
 
